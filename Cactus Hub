@@ -1,0 +1,25 @@
+-- Cactus Hub | Universal Loader
+
+local Scripts = {
+    [132929771812494] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cactus%20Hub",
+    [139459378578728] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cactus%20Hub",
+    [110546355710189] = "https://pastebin.com/raw/ic0KSfSs",
+    [103076556916764] = "https://pastebin.com/raw/w88PpcGR",
+    [17720162456] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/sorcerer",
+}
+
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+local url = Scripts[game.GameId]
+if not url then
+    game.Players.LocalPlayer:Kick("[Cactus Hub] This game is not supported.")
+    return
+end
+
+local ok, err = pcall(function()
+    loadstring(game:HttpGet(url))()
+end)
+
+if not ok then
+    warn("[Cactus Hub] Failed to load: " .. tostring(err))
+end
