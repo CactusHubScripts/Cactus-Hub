@@ -1,11 +1,11 @@
 -- Cactus Hub | Universal Loader
 
 local Scripts = {
-    [132929771812494] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cactus%20Hub",
-    [139459378578728] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cactus%20Hub",
-    [110546355710189] = "https://pastebin.com/raw/ic0KSfSs",
-    [103076556916764] = "https://pastebin.com/raw/w88PpcGR",
-    [17720162456] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/sorcerer",
+    [10762636904] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cactus%20Hub", -- Camera TD
+    [10764633350] = "https://pastebin.com/raw/r18zvmq3",                                                        -- Sakudun TD
+    [10772095908] = "https://pastebin.com/raw/ic0KSfSs",                                                        -- 8Bit TD
+    [10771908014] = "https://pastebin.com/raw/w88PpcGR",                                                        -- Dragon TD
+    [6069634717]  = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/sorcerer",      -- Sorcerer TD
 }
 
 if not game:IsLoaded() then game.Loaded:Wait() end
@@ -21,5 +21,5 @@ local ok, err = pcall(function()
 end)
 
 if not ok then
-    warn("[Cactus Hub] Failed to load: " .. tostring(err))
+    error("[Cactus Hub] Failed to load: " .. tostring(err), 0)
 end
