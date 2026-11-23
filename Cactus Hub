@@ -10,6 +10,7 @@ local Scripts = {
     [10231502419] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/snack",         -- Snack TD
     [10772478335] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/astro",         -- Skibidi Astro TD
     [10768556372] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/candy",         -- Candy Kingdom Defense
+    [4778845442]  = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/toilet",        -- Toilet TD
 }
 
 if not game:IsLoaded() then game.Loaded:Wait() end
