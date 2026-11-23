@@ -1,7 +1,7 @@
 -- Cactus Hub | Universal Loader
 
 local Scripts = {
-    [10762636904] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cactus%20Hub", -- Camera TD
+    [10762636904] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cameraman",    -- Camera TD
     [10764633350] = "https://pastebin.com/raw/r18zvmq3",                                                        -- Sakudun TD
     [10772095908] = "https://pastebin.com/raw/ic0KSfSs",                                                        -- 8Bit TD
     [10771908014] = "https://pastebin.com/raw/w88PpcGR",                                                        -- Dragon TD
