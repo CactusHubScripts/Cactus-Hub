@@ -3,7 +3,7 @@
 local Scripts = {
     [10762636904]    = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/Cameraman", -- Camera TD
     [10764633350]    = "https://pastebin.com/raw/r18zvmq3",                                                     -- Sakudun TD
-    [10772095908]    = "https://pastebin.com/raw/ic0KSfSs",                                                     -- 8Bit TD
+    [10772095908]    = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/8%20bit",   -- 8Bit TD
     [10771908014]    = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/dragon",     -- Dragon TD
     [90749532382026] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/dragon",     -- Dragon TD (match)
     [6069634717]     = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/sorcerer",   -- Sorcerer TD
@@ -14,9 +14,14 @@ local Scripts = {
     [4778845442]     = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/toilet",     -- Toilet TD
 }
 
+local PlaceScripts = {
+    [93712201161812]  = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/legacy",   -- Legacy TTD
+    [131703399727686] = "https://raw.githubusercontent.com/cactusscripts/Cactus-Hub/refs/heads/main/legacy",   -- Legacy TTD (match)
+}
+
 if not game:IsLoaded() then game.Loaded:Wait() end
 
-local url = Scripts[game.GameId]
+local url = PlaceScripts[game.PlaceId] or Scripts[game.GameId]
 if not url then
     game.Players.LocalPlayer:Kick("[Cactus Hub] This game is not supported.")
     return
